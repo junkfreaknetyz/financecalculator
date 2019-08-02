@@ -1,0 +1,48 @@
+<!--
+this is a financial calculator pages
+-->
+<!doctype html>
+<html>
+
+  <head>
+    <title>calculate up or down</title>
+  </head>
+
+  <body onload="PageOnLoad()">
+
+<!-- ======================================== -->
+    <!-- input price buy-->
+    <div class="class_PriceBuy">
+      <label>input price buy:<input type="number" name="inputPriceBuy" id="inputPriceBuy"></input></label>
+    </div>
+    <!-- end of input price buy -->
+
+<!-- ======================================== -->
+    <!-- input price current -->
+    <div class="class_PriceCurrent">
+      <label>input price current:<input type="number" name="inputPriceCurrent"id="inputPriceCurrent"></input></label>
+    </div>
+    <!-- end of input price current -->
+
+<!-- ======================================== -->
+    <!-- execute calculate -->
+    <div class="class_Execute">
+      <!-- <button type="button" onclick="getResultToBodyUpOrDown()">calculate</button> -->
+      <button type="button" onclick="getResultToBodyUpOrDown('inputPriceBuy','inputPriceCurrent','labelResult')">calculate</button>
+    </div>
+    <!-- end of execute caltulate -->
+
+<!-- ======================================== -->
+    <!-- result -->
+    <div class="result">
+      <label id="labelResult"></label>
+    </div>
+    <!-- end of result -->
+
+    <!-- javascript descriptions -->
+    <script src="calculate.js"></script>
+    <!-- end of javascript descriptions -->
+
+  <!-- EOD -->
+  </body>
+</html>
